@@ -8,7 +8,7 @@ export function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-50 border-b border-white/10 bg-zinc-950/80 backdrop-blur-xl">
+    <header className="sticky top-0 z-50 border-b border-white/10 bg-white/[0.03] backdrop-blur-xl">
       <div className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between px-6">
         <Link href="/" className="text-sm font-semibold tracking-[0.24em] text-white uppercase">
           Silent Pods

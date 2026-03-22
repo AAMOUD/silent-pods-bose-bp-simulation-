@@ -31,7 +31,7 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="grid w-full max-w-sm gap-3 rounded-3xl border border-white/10 bg-black/30 p-5 backdrop-blur md:mb-2 animate-fade-in-up-delay">
+        <div className="grid w-full max-w-sm gap-3 rounded-3xl border border-white/10 bg-white/[0.03] p-5 backdrop-blur md:mb-2 animate-fade-in-up-delay">
           <p className="text-xs uppercase tracking-[0.2em] text-zinc-400">Pilote 2026</p>
           <p className="text-2xl font-semibold text-white">Experience sonore premium</p>
           <p className="text-sm leading-relaxed text-zinc-300">

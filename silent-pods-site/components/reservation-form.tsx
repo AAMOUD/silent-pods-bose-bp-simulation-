@@ -115,7 +115,7 @@ export function ReservationForm() {
         ) : null}
       </form>
 
-      <aside className="rounded-3xl border border-white/10 bg-black/40 p-6">
+      <aside className="rounded-3xl border border-white/10 bg-white/[0.03] p-6 backdrop-blur-sm">
         <p className="text-xs uppercase tracking-[0.2em] text-zinc-400">Recapitulatif</p>
         <div className="mt-5 space-y-3 text-sm text-zinc-200">
           <p className="flex justify-between gap-4">

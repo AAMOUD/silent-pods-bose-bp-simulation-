@@ -19,7 +19,7 @@ export default function ContactPage() {
       <div className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
         <ContactForm />
 
-        <aside className="space-y-5 rounded-3xl border border-white/10 bg-black/40 p-6">
+        <aside className="space-y-5 rounded-3xl border border-white/10 bg-white/[0.03] p-6 backdrop-blur-sm">
           <div>
             <p className="text-xs uppercase tracking-[0.2em] text-zinc-400">Coordonnees</p>
             <p className="mt-3 text-sm text-zinc-200">contact@silentpods-bose.demo</p>

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export function Footer() {
   return (
-    <footer className="mt-16 border-t border-white/10 bg-black/40">
+    <footer className="mt-16 border-t border-white/10 bg-white/[0.02] backdrop-blur-sm">
       <div className="mx-auto grid w-full max-w-6xl gap-10 px-6 py-12 md:grid-cols-3">
         <div>
           <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white">Silent Pods</p>
