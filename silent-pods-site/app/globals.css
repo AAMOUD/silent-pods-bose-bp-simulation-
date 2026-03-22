@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+:root {
+  --background: #05070b;
+  --foreground: #f3f4f6;
+  --ice-200: #c8f6ff;
+  --ice-300: #a7f3ff;
+  --ice-400: #88e7ff;
+  --ice-500: #57c8ff;
+  --void-950: #05070b;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-ice-200: var(--ice-200);
+  --color-ice-300: var(--ice-300);
+  --color-ice-400: var(--ice-400);
+  --color-ice-500: var(--ice-500);
+  --color-void-950: var(--void-950);
+  --font-sans: var(--font-manrope);
+  --font-display: var(--font-space-grotesk);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-manrope), sans-serif;
+  background-image:
+    radial-gradient(circle at 15% -10%, rgba(87, 200, 255, 0.2), transparent 40%),
+    radial-gradient(circle at 85% 10%, rgba(158, 125, 255, 0.15), transparent 35%),
+    linear-gradient(to bottom, #05070b, #04050a 40%, #070911);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-space-grotesk), sans-serif;
+}
+
+::selection {
+  background: rgba(136, 231, 255, 0.3);
+  color: white;
+}
+
+.animate-fade-in-up {
+  opacity: 0;
+  animation: fade-in-up 700ms ease-out forwards;
+}
+
+.animate-fade-in-up-delay {
+  opacity: 0;
+  animation: fade-in-up 850ms ease-out 160ms forwards;
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-in-up,
+  .animate-fade-in-up-delay {
+    animation: none;
+    opacity: 1;
+  }
+}

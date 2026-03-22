@@ -1,0 +1,15 @@
+# Python virtual environment
+silent-pods/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Node dependencies and build outputs
+silent-pods-site/node_modules/
+silent-pods-site/.next/
+silent-pods-site/out/
+silent-pods-site/dist/
+
+# Logs
+*.log
