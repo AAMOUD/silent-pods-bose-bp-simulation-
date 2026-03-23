@@ -4,13 +4,13 @@ import { ExternalLink, Plane, Train, Building, CircleDot } from "lucide-react";
 import { useMemo, useState } from "react";
 import { sites, type SiteRecord, type SiteType } from "@/data/site";
 
-type SortMode = "proximite" | "disponibilite" | "popularite";
+type SortMode = "proximité" | "disponibilité" | "popularité";
 
-const allTypes: Array<"Tous" | SiteType> = ["Tous", "Gare SNCF", "Aeroport", "Entreprise"];
+const allTypes: Array<"Tous" | SiteType> = ["Tous", "Gare SNCF", "Aéroport", "Entreprise"];
 
 const pinIconByType = {
   "Gare SNCF": Train,
-  Aeroport: Plane,
+  Aéroport: Plane,
   Entreprise: Building,
 };
 
@@ -35,7 +35,7 @@ const CITY_ANCHORS: Record<string, { x: number; y: number }> = {
 
 const TYPE_SHIFT: Record<SiteType, { dx: number; dy: number }> = {
   "Gare SNCF": { dx: -1.2, dy: 0 },
-  Aeroport: { dx: 1.2, dy: -1 },
+  Aéroport: { dx: 1.2, dy: -1 },
   Entreprise: { dx: 0.8, dy: 1.2 },
 };
 
@@ -92,7 +92,7 @@ export function SiteExplorer() {
   const [type, setType] = useState<"Tous" | SiteType>("Tous");
   const [city, setCity] = useState("");
   const [availableOnly, setAvailableOnly] = useState(true);
-  const [sortMode, setSortMode] = useState<SortMode>("disponibilite");
+  const [sortMode, setSortMode] = useState<SortMode>("disponibilité");
   const [selectedId, setSelectedId] = useState(sites[0]?.id ?? "");
 
   const cities = useMemo(() => Array.from(new Set(sites.map((site) => site.city))).sort(), []);
@@ -104,8 +104,8 @@ export function SiteExplorer() {
       .filter((site) => (availableOnly ? site.podsAvailableNow > 0 : true));
 
     const sorted = [...filtered].sort((a, b) => {
-      if (sortMode === "popularite") return b.popularity - a.popularity;
-      if (sortMode === "proximite") {
+      if (sortMode === "popularité") return b.popularity - a.popularity;
+      if (sortMode === "proximité") {
         return computeDistanceScore(a, city) - computeDistanceScore(b, city);
       }
       return b.podsAvailableNow - a.podsAvailableNow;
@@ -193,7 +193,7 @@ export function SiteExplorer() {
         </label>
 
         <label className="space-y-2">
-          <span className="text-sm text-zinc-200">Disponibilite</span>
+          <span className="text-sm text-zinc-200">Disponibilité</span>
           <select
             value={availableOnly ? "now" : "any"}
             onChange={(event) => setAvailableOnly(event.target.value === "now")}
@@ -212,8 +212,8 @@ export function SiteExplorer() {
             className="w-full rounded-xl border border-white/15 bg-zinc-950/80 px-3 py-2 text-sm text-white"
           >
             <option value="proximite">Proximite</option>
-            <option value="disponibilite">Disponibilite</option>
-            <option value="popularite">Popularite</option>
+            <option value="disponibilité">Disponibilité</option>
+            <option value="popularité">Popularité</option>
           </select>
         </label>
 
@@ -226,11 +226,11 @@ export function SiteExplorer() {
 
       <div className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
         <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-5">
-          <p className="text-xs uppercase tracking-[0.2em] text-zinc-400">Carte interactive (demo)</p>
+          <p className="text-xs uppercase tracking-[0.2em] text-zinc-400">Carte interactive (démo)</p>
           <div className="relative mt-4 h-80 overflow-hidden rounded-2xl border border-white/10 bg-zinc-950/70">
             <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(103,232,249,0.18),transparent_45%),radial-gradient(circle_at_80%_70%,rgba(167,139,250,0.14),transparent_40%)]" />
             <div className="pointer-events-none absolute left-3 top-3 rounded-full border border-white/10 bg-black/25 px-2 py-1 text-[11px] text-zinc-300">
-              Carte orientee: nord en haut, sud en bas, sites espaces par ville
+              Carte orientée: nord en haut, sud en bas, sites espacés par ville
             </div>
             {filteredSites.map((site) => {
               const position = markerPositions.get(site.id) ?? { left: "50%", top: "50%" };
@@ -279,13 +279,13 @@ export function SiteExplorer() {
               <p className="text-sm text-zinc-300">Horaires: {selectedSite.openingHours}</p>
               <p className="text-sm text-zinc-300">Pods: {selectedSite.podsTotal}</p>
               <p className="text-sm text-zinc-300">
-                Disponibilite temps reel: {selectedSite.podsAvailableNow} pod(s) disponible(s) maintenant
+                Disponibilité temps réel: {selectedSite.podsAvailableNow} pod(s) disponible(s) maintenant
               </p>
-              <p className="text-sm text-zinc-300">Acces PMR: {selectedSite.pmr}</p>
+              <p className="text-sm text-zinc-300">Accès PMR: {selectedSite.pmr}</p>
               <p className="text-sm text-zinc-300">Transports: {selectedSite.transports}</p>
               <p className="text-sm text-zinc-300">Note moyenne: {selectedSite.rating.toFixed(1)} / 5</p>
               <div className="rounded-xl border border-white/10 bg-zinc-950/60 p-3">
-                <p className="text-xs uppercase tracking-[0.2em] text-zinc-400">Equipements</p>
+                <p className="text-xs uppercase tracking-[0.2em] text-zinc-400">Équipements</p>
                 <p className="mt-2 text-sm text-zinc-300">{selectedSite.equipments.join(" - ")}</p>
               </div>
               <a

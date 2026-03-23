@@ -8,7 +8,7 @@ export function Footer() {
         <div>
           <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white">Silent Pods</p>
           <p className="mt-3 max-w-sm text-sm leading-relaxed text-zinc-400">
-            Concept de pods insonorises portes par Bose pour offrir des bulles de calme dans les lieux publics.
+            Concept de pods insonorisés portés par Bose pour offrir des bulles de calme dans les lieux publics.
           </p>
         </div>
 
@@ -22,7 +22,7 @@ export function Footer() {
             </li>
             <li>
               <Link href="/reservation" className="hover:text-white">
-                Reservation
+                Réservation
               </Link>
             </li>
             <li>
@@ -50,10 +50,10 @@ export function Footer() {
 
         <div>
           <p className="text-sm font-medium text-white">Contact et support</p>
-          <p className="mt-3 text-sm text-zinc-400">silentpods@bose.com (demo)</p>
+          <p className="mt-3 text-sm text-zinc-400">silentpods@bose.com (démo)</p>
           <p className="text-sm text-zinc-400">+33 1 84 88 20 26</p>
-          <p className="mt-2 text-xs text-zinc-500">Reponse sous 24h ouvrees.</p>
-          <p className="text-xs text-zinc-500">Urgence pod bloque: +33 1 80 00 00 24.</p>
+          <p className="mt-2 text-xs text-zinc-500">Réponse sous 24h ouvrées.</p>
+          <p className="text-xs text-zinc-500">Urgence pod bloqué: +33 1 80 00 00 24.</p>
           <div className="mt-4 flex flex-wrap gap-2 text-xs text-zinc-400">
             {legalLinks.map((link) => (
               <Link key={link.href} href={link.href} className="rounded-full border border-white/15 px-2 py-1 hover:text-white">
@@ -61,7 +61,7 @@ export function Footer() {
               </Link>
             ))}
           </div>
-          <p className="mt-4 text-xs text-zinc-500">Mentions legales fictives - Demo academique 2026.</p>
+          <p className="mt-4 text-xs text-zinc-500">Mentions légales fictives - Démo académique 2026.</p>
         </div>
       </div>
     </footer>

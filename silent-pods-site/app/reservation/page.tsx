@@ -6,18 +6,18 @@ import { SiteExplorer } from "@/components/site-explorer";
 import { operationFeatures } from "@/data/site";
 
 export const metadata: Metadata = {
-  title: "Reservation et localisations",
+  title: "Réservation et localisations",
   description:
-    "Reservez un Silent Pod en simulation locale et decouvrez les localisations pilotes a Paris Gare du Nord et Lyon Part-Dieu.",
+    "Réservez un Silent Pod en simulation locale et découvrez les localisations pilotes à Paris Gare du Nord et Lyon Part-Dieu.",
 };
 
 export default function ReservationPage() {
   return (
     <>
       <SectionWrapper
-        eyebrow="Reservation"
-        title="Reservez votre pod en quelques secondes"
-        description="Moteur de reservation fictif en frontend local: choisissez le lieu, la duree, l'horaire et l'option immersive."
+        eyebrow="Réservation"
+        title="Réservez votre pod en quelques secondes"
+        description="Moteur de réservation fictif en frontend local: choisissez le lieu, la durée, l'horaire et l'option immersive."
         className="pt-16"
       >
         <ReservationForm />
@@ -25,16 +25,16 @@ export default function ReservationPage() {
 
       <SectionWrapper
         eyebrow="Localisations"
-        title="Reseau pilote et extension prevue"
-        description="Lancement sur deux grandes gares francaises, puis deploiement progressif vers certains aeroports et centres commerciaux."
+        title="Réseau pilote et extension prévue"
+        description="Lancement sur deux grandes gares françaises, puis déploiement progressif vers certains aéroports et centres commerciaux."
       >
         <LocationCards />
       </SectionWrapper>
 
       <SectionWrapper
-        eyebrow="Temps reel"
-        title="Systeme de reservation et d'acces"
-        description="Simulation des briques techniques: disponibilite, verrouillage de creneau, paiement securise, QR et controle d'acces."
+        eyebrow="Temps réel"
+        title="Système de réservation et d'accès"
+        description="Simulation des briques techniques: disponibilité, verrouillage de créneau, paiement sécurisé, QR et contrôle d'accès."
       >
         <div className="grid gap-4 md:grid-cols-4">
           {operationFeatures.map((item) => (
@@ -48,8 +48,8 @@ export default function ReservationPage() {
 
       <SectionWrapper
         eyebrow="Sites"
-        title="Carte interactive et fiche detaillee"
-        description="Filtrage par type/ville/disponibilite, marqueurs et detail complet de chaque site."
+        title="Carte interactive et fiche détaillée"
+        description="Filtrage par type/ville/disponibilité, marqueurs et détail complet de chaque site."
       >
         <SiteExplorer />
       </SectionWrapper>

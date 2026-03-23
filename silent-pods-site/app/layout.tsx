@@ -18,15 +18,15 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata: Metadata = {
   metadataBase: new URL("https://silent-pods.local"),
   title: {
-    default: "Silent Pods | Pods insonorises by Bose",
+    default: "Silent Pods | Pods insonorisés by Bose",
     template: "%s | Silent Pods",
   },
   description:
-    "Silent Pods est une vitrine de concept pour des pods insonorises Bose installes dans les gares, aeroports et centres commerciaux.",
+    "Silent Pods est une vitrine de concept pour des pods insonorisés Bose installés dans les gares, aéroports et centres commerciaux.",
   openGraph: {
     title: "Silent Pods",
     description:
-      "Le calme la ou vous ne l'attendez pas. Concept de pods insonorises premium portes par Bose.",
+      "Le calme là où vous ne l'attendez pas. Concept de pods insonorisés premium portés par Bose.",
     type: "website",
     locale: "fr_FR",
   },

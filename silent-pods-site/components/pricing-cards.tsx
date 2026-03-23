@@ -29,7 +29,7 @@ export function PricingCards() {
       ))}
 
       <article className="rounded-3xl border border-violet-300/35 bg-violet-300/10 p-6 md:col-span-3">
-        <p className="text-sm uppercase tracking-[0.16em] text-violet-100">Option complementaire</p>
+        <p className="text-sm uppercase tracking-[0.16em] text-violet-100">Option complémentaire</p>
         <div className="mt-2 flex flex-wrap items-end justify-between gap-3">
           <div>
             <p className="text-xl font-semibold text-white">{immersiveOption.name}</p>

@@ -43,7 +43,7 @@ export function ContactForm() {
             name="subject"
             type="text"
             className="w-full rounded-xl border border-white/15 bg-zinc-950 px-3 py-2 text-sm text-white focus:border-ice-300 focus:outline-none"
-            placeholder="Partenariat, media, informations..."
+            placeholder="Partenariat, média, informations..."
           />
         </label>
 
@@ -68,7 +68,7 @@ export function ContactForm() {
 
       {submitted ? (
         <p className="mt-4 rounded-xl border border-emerald-300/40 bg-emerald-300/10 px-4 py-3 text-sm text-emerald-100">
-          Merci, votre message a bien ete pris en compte. Reponse estimee sous 24 a 48 heures (simulation).
+          Merci, votre message a bien été pris en compte. Réponse estimée sous 24 à 48 heures (simulation).
         </p>
       ) : null}
     </form>

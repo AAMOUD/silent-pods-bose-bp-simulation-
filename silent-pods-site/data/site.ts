@@ -36,40 +36,40 @@ export const benefits = [
   {
     title: "Se concentrer",
     description:
-      "Un espace acoustiquement isole pour avancer sur un dossier, preparer une presentation ou etudier sans interruption.",
+      "Un espace acoustiquement isolé pour avancer sur un dossier, préparer une présentation ou étudier sans interruption.",
     icon: Briefcase,
   },
   {
     title: "Se reposer",
     description:
-      "Quelques minutes de calme entre deux trajets pour reduire la fatigue et recuperer dans un cadre confortable.",
+      "Quelques minutes de calme entre deux trajets pour réduire la fatigue et récupérer dans un cadre confortable.",
     icon: Clock3,
   },
   {
-    title: "Mediter",
+    title: "Méditer",
     description:
       "Un cocon silencieux ideal pour une pause respiratoire, recentrer son attention et faire retomber la pression.",
     icon: Brain,
   },
   {
-    title: "Passer un appel en toute confidentialite",
+    title: "Passer un appel en toute confidentialité",
     description:
-      "Un environnement discret pour les conversations sensibles, les reunions rapides ou les appels personnels.",
+      "Un environnement discret pour les conversations sensibles, les réunions rapides ou les appels personnels.",
     icon: Phone,
   },
 ];
 
 export const kpis = [
-  { value: "14", label: "sites references dans le plan" },
+  { value: "14", label: "sites références dans le plan" },
   { value: "3 a 5", label: "pods par site pilote" },
-  { value: "< 30 s", label: "pour reserver" },
+  { value: "< 30 s", label: "pour réserver" },
 ];
 
 export const useCases = [
   {
     title: "Voyageurs en transit",
     description:
-      "Rester productif ou se detendre pendant une correspondance sans quitter la gare.",
+      "Rester productif ou se détendre pendant une correspondance sans quitter la gare.",
     icon: Train,
   },
   {
@@ -79,9 +79,9 @@ export const useCases = [
     icon: Building2,
   },
   {
-    title: "Etudiants et jeunes actifs",
+    title: "Étudiants et jeunes actifs",
     description:
-      "Reviser, travailler ou se ressourcer dans un espace premium accessible a la demande.",
+      "Réviser, travailler ou se ressourcer dans un espace premium accessible a la demande.",
     icon: Headphones,
   },
 ];
@@ -94,33 +94,33 @@ export const pricingPlans = [
     description: "Pour un appel urgent, une micro-pause ou une concentration rapide.",
     highlight: false,
     features: [
-      "Acces a un pod standard",
+      "Accès a un pod standard",
       "Isolation phonique Bose",
-      "Wi-Fi securise + USB-C",
+      "Wi-Fi sécurisé + USB-C",
     ],
   },
   {
     name: "Solo Plus",
     price: "9 EUR",
     duration: "1 h",
-    description: "L'equilibre ideal pour travailler ou recuperer avant un trajet.",
+    description: "L'équilibre ideal pour travailler ou récupérer avant un trajet.",
     highlight: true,
     features: [
       "Tout le contenu de l'offre Solo",
-      "Pret d'un casque Bose",
-      "Meilleur prix a l'heure",
+      "Prêt d'un casque Bose",
+      "Meilleur prix à l'heure",
     ],
   },
   {
     name: "Premium",
     price: "14 EUR",
     duration: "1 h",
-    description: "L'offre immersive: meditation guidee, assise massage et ambiance sonore premium.",
+    description: "L'offre immersive: meditation guidée, assise massage et ambiance sonore premium.",
     highlight: false,
     features: [
       "Tout le contenu de l'offre Solo Plus",
       "Programme relaxation Bose",
-      "Priorite sur certains creneaux",
+      "Priorité sur certains créneaux",
     ],
   },
 ];
@@ -129,11 +129,11 @@ export const subscriptionPlans = [
   {
     name: "Abonnement mensuel",
     price: "49 EUR / mois",
-    details: "8 heures incluses, puis 6 EUR / heure supplementaire.",
+    details: "8 heures incluses, puis 6 EUR / heure supplémentaire.",
     perks: [
-      "Historique de reservation detaille",
+      "Historique de réservation détaillé",
       "QR code toujours disponible dans l'espace client",
-      "Report possible des heures non consommees (30 jours)",
+      "Report possible des heures non consommées (30 jours)",
     ],
   },
 ];
@@ -142,12 +142,12 @@ export const b2bPlans = [
   {
     name: "Location B2B",
     price: "799 EUR / pod / mois",
-    details: "Acces salarie illimite, maintenance incluse, installation en 2 jours sans travaux.",
+    details: "Accès salarié illimité, maintenance incluse, installation en 2 jours sans travaux.",
   },
   {
     name: "Achat cabine concurrente",
     price: "11 000 EUR (one-shot)",
-    details: "Investissement initial eleve, moins flexible pour des sites evolutifs.",
+    details: "Investissement initial élevé, moins flexible pour des sites évolutifs.",
   },
 ];
 
@@ -155,7 +155,7 @@ export const immersiveOption = {
   name: "Option immersive Bose",
   price: "+3 EUR",
   description:
-    "Activez une ambiance sonore premium pour la relaxation, la concentration ou la meditation guidee.",
+    "Activez une ambiance sonore premium pour la relaxation, la concentration ou la meditation guidée.",
 };
 
 export const locations = [
@@ -163,23 +163,23 @@ export const locations = [
     name: "Paris Gare du Nord",
     status: "Pilote actif",
     description:
-      "Implantation en zone de correspondance, acces direct depuis le hall principal.",
+      "Implantation en zone de correspondance, accès direct depuis le hall principal.",
   },
   {
     name: "Lyon Part-Dieu",
     status: "Pilote actif",
     description:
-      "Pods situes a proximite des quais grande vitesse et de l'espace services.",
+      "Pods situés à proximité des quais grande vitesse et de l'espace services.",
   },
   {
-    name: "Aeroports et centres commerciaux",
+    name: "Aéroports et centres commerciaux",
     status: "Prochainement",
     description:
       "Extension en preparation dans certains hubs de transport et malls urbains.",
   },
 ];
 
-export type SiteType = "Gare SNCF" | "Aeroport" | "Entreprise";
+export type SiteType = "Gare SNCF" | "Aéroport" | "Entreprise";
 
 export type SiteRecord = {
   id: string;
@@ -218,9 +218,9 @@ export const sites: SiteRecord[] = [
     podsAvailableNow: 2,
     openingYear: "Pilote 2026",
     transports: "Metro 4/5, RER B/D, Bus 26/38/43",
-    pmr: "Acces PMR complet",
+    pmr: "Accès PMR complet",
     googleMapsUrl: "https://maps.google.com/?q=Gare+du+Nord+Paris",
-    equipments: ["Wi-Fi securise", "USB-C", "Casque Bose", "Assise confort"],
+    equipments: ["Wi-Fi sécurisé", "USB-C", "Casque Bose", "Assise confort"],
     formulas: ["Solo 30 min - 5 EUR TTC", "Solo Plus 1h - 9 EUR TTC", "Premium 1h - 14 EUR TTC"],
     rating: 4.7,
     popularity: 98,
@@ -240,9 +240,9 @@ export const sites: SiteRecord[] = [
     podsAvailableNow: 1,
     openingYear: "Pilote 2026",
     transports: "Metro 1/14, RER A/D, Bus 24/57/61",
-    pmr: "Acces PMR complet",
+    pmr: "Accès PMR complet",
     googleMapsUrl: "https://maps.google.com/?q=Gare+de+Lyon+Paris",
-    equipments: ["Wi-Fi securise", "USB-C", "Casque Bose"],
+    equipments: ["Wi-Fi sécurisé", "USB-C", "Casque Bose"],
     formulas: ["Solo 30 min - 5 EUR TTC", "Solo Plus 1h - 9 EUR TTC"],
     rating: 4.5,
     popularity: 95,
@@ -262,9 +262,9 @@ export const sites: SiteRecord[] = [
     podsAvailableNow: 0,
     openingYear: "An 2",
     transports: "Metro 4/6/12/13, Bus 28/39/58",
-    pmr: "Acces PMR complet",
+    pmr: "Accès PMR complet",
     googleMapsUrl: "https://maps.google.com/?q=Gare+Montparnasse+Paris",
-    equipments: ["Wi-Fi securise", "USB-C"],
+    equipments: ["Wi-Fi sécurisé", "USB-C"],
     formulas: ["Solo 30 min - 5 EUR TTC", "Solo Plus 1h - 9 EUR TTC"],
     rating: 4.3,
     popularity: 88,
@@ -284,9 +284,9 @@ export const sites: SiteRecord[] = [
     podsAvailableNow: 1,
     openingYear: "An 2",
     transports: "Metro 3/12/13/14, RER E",
-    pmr: "Acces PMR partiel",
+    pmr: "Accès PMR partiel",
     googleMapsUrl: "https://maps.google.com/?q=Gare+Saint-Lazare+Paris",
-    equipments: ["Wi-Fi securise", "USB-C"],
+    equipments: ["Wi-Fi sécurisé", "USB-C"],
     formulas: ["Solo 30 min - 5 EUR TTC"],
     rating: 4.1,
     popularity: 82,
@@ -300,15 +300,15 @@ export const sites: SiteRecord[] = [
     city: "Lyon",
     postalCode: "69003",
     address: "5 Place Charles Beraudier, 69003 Lyon",
-    area: "Niveau services a proximite des quais",
+    area: "Niveau services a proximité des quais",
     openingHours: "06:00 - 22:00, 7j/7",
     podsTotal: 2,
     podsAvailableNow: 1,
     openingYear: "An 3",
     transports: "Metro B, Tram T1/T3/T4, Rhonexpress",
-    pmr: "Acces PMR complet",
+    pmr: "Accès PMR complet",
     googleMapsUrl: "https://maps.google.com/?q=Gare+Part-Dieu+Lyon",
-    equipments: ["Wi-Fi securise", "USB-C", "Casque Bose"],
+    equipments: ["Wi-Fi sécurisé", "USB-C", "Casque Bose"],
     formulas: ["Solo 30 min - 5 EUR TTC", "Solo Plus 1h - 9 EUR TTC", "Premium 1h - 14 EUR TTC"],
     rating: 4.6,
     popularity: 91,
@@ -328,9 +328,9 @@ export const sites: SiteRecord[] = [
     podsAvailableNow: 2,
     openingYear: "An 3",
     transports: "Metro M1/M2, Bus 49/52",
-    pmr: "Acces PMR complet",
+    pmr: "Accès PMR complet",
     googleMapsUrl: "https://maps.google.com/?q=Gare+Saint-Charles+Marseille",
-    equipments: ["Wi-Fi securise", "USB-C"],
+    equipments: ["Wi-Fi sécurisé", "USB-C"],
     formulas: ["Solo 30 min - 5 EUR TTC", "Solo Plus 1h - 9 EUR TTC"],
     rating: 4.2,
     popularity: 86,
@@ -350,9 +350,9 @@ export const sites: SiteRecord[] = [
     podsAvailableNow: 1,
     openingYear: "An 3",
     transports: "Tram C/D, Bus 1/9/10",
-    pmr: "Acces PMR complet",
+    pmr: "Accès PMR complet",
     googleMapsUrl: "https://maps.google.com/?q=Gare+Bordeaux+St+Jean",
-    equipments: ["Wi-Fi securise", "USB-C"],
+    equipments: ["Wi-Fi sécurisé", "USB-C"],
     formulas: ["Solo 30 min - 5 EUR TTC", "Solo Plus 1h - 9 EUR TTC"],
     rating: 4.3,
     popularity: 84,
@@ -372,9 +372,9 @@ export const sites: SiteRecord[] = [
     podsAvailableNow: 0,
     openingYear: "An 3",
     transports: "Metro 2, Tram R/T, Bus 14",
-    pmr: "Acces PMR complet",
+    pmr: "Accès PMR complet",
     googleMapsUrl: "https://maps.google.com/?q=Gare+Lille+Europe",
-    equipments: ["Wi-Fi securise", "USB-C", "Casque Bose"],
+    equipments: ["Wi-Fi sécurisé", "USB-C", "Casque Bose"],
     formulas: ["Solo 30 min - 5 EUR TTC", "Premium 1h - 14 EUR TTC"],
     rating: 4.4,
     popularity: 80,
@@ -394,9 +394,9 @@ export const sites: SiteRecord[] = [
     podsAvailableNow: 1,
     openingYear: "An 3",
     transports: "Tram A/C/D",
-    pmr: "Acces PMR complet",
+    pmr: "Accès PMR complet",
     googleMapsUrl: "https://maps.google.com/?q=Gare+Strasbourg+Ville",
-    equipments: ["Wi-Fi securise", "USB-C"],
+    equipments: ["Wi-Fi sécurisé", "USB-C"],
     formulas: ["Solo 30 min - 5 EUR TTC"],
     rating: 4,
     popularity: 76,
@@ -406,7 +406,7 @@ export const sites: SiteRecord[] = [
   {
     id: "cdg",
     name: "CDG Terminal 2E",
-    type: "Aeroport",
+    type: "Aéroport",
     city: "Roissy",
     postalCode: "95700",
     address: "Terminal 2E, 95700 Roissy-en-France",
@@ -416,9 +416,9 @@ export const sites: SiteRecord[] = [
     podsAvailableNow: 1,
     openingYear: "An 2",
     transports: "RER B, Bus CDGVal",
-    pmr: "Acces PMR complet",
+    pmr: "Accès PMR complet",
     googleMapsUrl: "https://maps.google.com/?q=CDG+Terminal+2E",
-    equipments: ["Wi-Fi securise", "USB-C", "Casque Bose", "Mode meditation"],
+    equipments: ["Wi-Fi sécurisé", "USB-C", "Casque Bose", "Mode meditation"],
     formulas: ["Solo 30 min - 5 EUR TTC", "Solo Plus 1h - 9 EUR TTC", "Premium 1h - 14 EUR TTC"],
     rating: 4.6,
     popularity: 93,
@@ -428,7 +428,7 @@ export const sites: SiteRecord[] = [
   {
     id: "ory",
     name: "Orly Terminal 4",
-    type: "Aeroport",
+    type: "Aéroport",
     city: "Orly",
     postalCode: "94390",
     address: "Terminal 4, 94390 Orly",
@@ -438,9 +438,9 @@ export const sites: SiteRecord[] = [
     podsAvailableNow: 0,
     openingYear: "An 2",
     transports: "Orlyval, Tram T7, Bus 183",
-    pmr: "Acces PMR complet",
+    pmr: "Accès PMR complet",
     googleMapsUrl: "https://maps.google.com/?q=Orly+Terminal+4",
-    equipments: ["Wi-Fi securise", "USB-C"],
+    equipments: ["Wi-Fi sécurisé", "USB-C"],
     formulas: ["Solo 30 min - 5 EUR TTC", "Solo Plus 1h - 9 EUR TTC"],
     rating: 4.2,
     popularity: 79,
@@ -450,19 +450,19 @@ export const sites: SiteRecord[] = [
   {
     id: "lys",
     name: "Lyon Saint-Exupery",
-    type: "Aeroport",
+    type: "Aéroport",
     city: "Lyon",
     postalCode: "69125",
-    address: "Aeroport Lyon Saint-Exupery, 69125 Colombier-Saugnieu",
+    address: "Aéroport Lyon Saint-Exupery, 69125 Colombier-Saugnieu",
     area: "Terminal 1, zone restauration",
     openingHours: "05:30 - 23:00, 7j/7",
     podsTotal: 1,
     podsAvailableNow: 1,
     openingYear: "An 3",
     transports: "Rhonexpress, Bus navettes",
-    pmr: "Acces PMR complet",
+    pmr: "Accès PMR complet",
     googleMapsUrl: "https://maps.google.com/?q=Lyon+Saint+Exupery+Airport",
-    equipments: ["Wi-Fi securise", "USB-C", "Casque Bose"],
+    equipments: ["Wi-Fi sécurisé", "USB-C", "Casque Bose"],
     formulas: ["Solo 30 min - 5 EUR TTC", "Premium 1h - 14 EUR TTC"],
     rating: 4.1,
     popularity: 73,
@@ -472,7 +472,7 @@ export const sites: SiteRecord[] = [
   {
     id: "nce",
     name: "Nice Cote d'Azur",
-    type: "Aeroport",
+    type: "Aéroport",
     city: "Nice",
     postalCode: "06200",
     address: "19 Rue Costes et Bellonte, 06200 Nice",
@@ -482,9 +482,9 @@ export const sites: SiteRecord[] = [
     podsAvailableNow: 1,
     openingYear: "An 3",
     transports: "Tram L2, Bus 12",
-    pmr: "Acces PMR complet",
+    pmr: "Accès PMR complet",
     googleMapsUrl: "https://maps.google.com/?q=Nice+Cote+d+Azur+Airport",
-    equipments: ["Wi-Fi securise", "USB-C"],
+    equipments: ["Wi-Fi sécurisé", "USB-C"],
     formulas: ["Solo 30 min - 5 EUR TTC", "Solo Plus 1h - 9 EUR TTC"],
     rating: 4,
     popularity: 71,
@@ -494,19 +494,19 @@ export const sites: SiteRecord[] = [
   {
     id: "mrs",
     name: "Marseille Provence",
-    type: "Aeroport",
+    type: "Aéroport",
     city: "Marseille",
     postalCode: "13700",
-    address: "Aeroport Marseille Provence, 13700 Marignane",
+    address: "Aéroport Marseille Provence, 13700 Marignane",
     area: "Terminal 1, zone commerces",
     openingHours: "05:30 - 23:00, 7j/7",
     podsTotal: 1,
     podsAvailableNow: 0,
     openingYear: "An 3",
     transports: "Navette gare Saint-Charles, Bus 13",
-    pmr: "Acces PMR complet",
+    pmr: "Accès PMR complet",
     googleMapsUrl: "https://maps.google.com/?q=Marseille+Provence+Airport",
-    equipments: ["Wi-Fi securise", "USB-C"],
+    equipments: ["Wi-Fi sécurisé", "USB-C"],
     formulas: ["Solo 30 min - 5 EUR TTC", "Premium 1h - 14 EUR TTC"],
     rating: 3.9,
     popularity: 69,
@@ -526,9 +526,9 @@ export const sites: SiteRecord[] = [
     podsAvailableNow: 3,
     openingYear: "Pilote B2B",
     transports: "Metro 1, RER A, Tram T2",
-    pmr: "Acces PMR complet",
+    pmr: "Accès PMR complet",
     googleMapsUrl: "https://maps.google.com/?q=La+Defense+Paris",
-    equipments: ["Wi-Fi securise", "USB-C", "Visio HD", "Mode focus"],
+    equipments: ["Wi-Fi sécurisé", "USB-C", "Visio HD", "Mode focus"],
     formulas: ["Abonnement entreprise 799 EUR / pod / mois"],
     rating: 4.8,
     popularity: 99,
@@ -539,33 +539,33 @@ export const sites: SiteRecord[] = [
 
 export const siteTypeIcons = {
   "Gare SNCF": Train,
-  Aeroport: Plane,
+  Aéroport: Plane,
   Entreprise: Building,
 };
 
 export const equipmentHighlights = [
-  { label: "Wi-Fi securise", icon: Wifi },
+  { label: "Wi-Fi sécurisé", icon: Wifi },
   { label: "Casque Bose", icon: Headphones },
-  { label: "Accessibilite PMR", icon: Accessibility },
-  { label: "Paiement securise", icon: ShieldCheck },
+  { label: "Accessibilité PMR", icon: Accessibility },
+  { label: "Paiement sécurisé", icon: ShieldCheck },
 ];
 
 export const operationFeatures = [
-  { title: "Mise a jour disponibilite / 30s", icon: AlarmClock },
-  { title: "Blocage creneau 5 min", icon: CalendarRange },
+  { title: "Mise à jour disponibilité / 30s", icon: AlarmClock },
+  { title: "Blocage créneau 5 min", icon: CalendarRange },
   { title: "Paiement et facturation", icon: CreditCard },
-  { title: "Controle d'acces QR", icon: Gem },
+  { title: "Contrôle d'accès QR", icon: Gem },
 ];
 
 export const b2bValueProps = [
   {
-    title: "Offrez le silence a vos equipes",
-    description: "Dans un contexte flex-office, les pods renforcent concentration, confidentialite et confort.",
+    title: "Offrez le silence à vos équipes",
+    description: "Dans un contexte flex-office, les pods renforcent concentration, confidentialité et confort.",
     icon: Building2,
   },
   {
-    title: "Marche estime a 1,2 MdEUR",
-    description: "Le marche des espaces acoustiques premium continue de croitre dans les hubs urbains.",
+    title: "Marché estimé à 1,2 MdEUR",
+    description: "Le marché des espaces acoustiques premium continue de croître dans les hubs urbains.",
     icon: Landmark,
   },
   {
@@ -575,7 +575,7 @@ export const b2bValueProps = [
   },
   {
     title: "QVT et RSE",
-    description: "Moins de bruit, plus de bien-etre et une experience salarie measurable.",
+    description: "Moins de bruit, plus de bien-être et une expérience salarié mesurable.",
     icon: Hotel,
   },
 ];
@@ -583,95 +583,95 @@ export const b2bValueProps = [
 export const testimonialItems = [
   {
     quote:
-      "J'ai reserve en moins de 30 secondes et j'ai enfin pu passer mon appel client sans le bruit du hall.",
-    author: "Nadia, consultante en mobilite",
+      "J'ai réservé en moins de 30 secondes et j'ai enfin pu passer mon appel client sans le bruit du hall.",
+    author: "Nadia, consultante en mobilité",
     rating: 5,
   },
   {
     quote:
-      "Le pod m'a permis de me concentrer avant un entretien. Le casque Bose fait la difference.",
-    author: "Thomas, etudiant",
+      "Le pod m'a permis de me concentrer avant un entretien. Le casque Bose fait la différence.",
+    author: "Thomas, étudiant",
     rating: 5,
   },
   {
     quote:
-      "Super utile pendant une correspondance longue. Experience premium et tres simple a utiliser.",
-    author: "Sofia, voyageuse frequente",
+      "Super utile pendant une correspondance longue. Expérience premium et très simple à utiliser.",
+    author: "Sofia, voyageuse fréquente",
     rating: 4,
   },
 ];
 
 export const tariffFaqItems = [
   {
-    question: "Que se passe-t-il si je depasse la duree reservee ?",
+    question: "Que se passe-t-il si je dépasse la durée réservée ?",
     answer:
-      "Un tarif de prolongation est applique par tranche de 15 minutes, uniquement si un pod reste disponible.",
+      "Un tarif de prolongation est appliqué par tranche de 15 minutes, uniquement si un pod reste disponible.",
   },
   {
-    question: "Puis-je prolonger ma reservation en cours ?",
+    question: "Puis-je prolonger ma réservation en cours ?",
     answer:
-      "Oui, depuis l'application ou l'ecran du pod, sous reserve de disponibilite immediate.",
+      "Oui, depuis l'application ou l'écran du pod, sous réserve de disponibilité immédiate.",
   },
   {
     question: "Quelle est la politique d'annulation ?",
     answer:
-      "Annulation gratuite jusqu'a 60 minutes avant le debut du creneau. Passe ce delai, remboursement partiel.",
+      "Annulation gratuite jusqu'à 60 minutes avant le début du créneau. Passé ce délai, remboursement partiel.",
   },
   {
-    question: "Le paiement est-il securise ?",
-    answer: "Oui, paiement HTTPS avec chiffrement, tokenisation et conformite PCI via prestataire certifie.",
+    question: "Le paiement est-il sécurisé ?",
+    answer: "Oui, paiement HTTPS avec chiffrement, tokenisation et conformité PCI via prestataire certifié.",
   },
 ];
 
 export const legalLinks = [
-  { label: "Politique de confidentialite", href: "/legal#confidentialite" },
+  { label: "Politique de confidentialité", href: "/legal#confidentialité" },
   { label: "Cookies", href: "/legal#cookies" },
   { label: "CGU", href: "/legal#cgu" },
   { label: "CGV", href: "/legal#cgv" },
-  { label: "Mentions legales", href: "/legal#mentions" },
+  { label: "Mentions légales", href: "/legal#mentions" },
 ];
 
 export const transportIcons = [Bus, Train, Plane];
 
 export const faqItems = [
   {
-    question: "Comment reserver un Silent Pod ?",
+    question: "Comment réserver un Silent Pod ?",
     answer:
-      "Choisissez votre lieu, votre duree et votre horaire depuis la page Reservation. Une confirmation immediate est ensuite affichee.",
+      "Choisissez votre lieu, votre durée et votre horaire depuis la page Réservation. Une confirmation immédiate est ensuite affichée.",
   },
   {
-    question: "Quelle est la duree minimale ?",
+    question: "Quelle est la durée minimale ?",
     answer:
-      "La duree minimale est de 30 minutes, pour offrir un format rapide et accessible a tous les usages.",
+      "La durée minimale est de 30 minutes, pour offrir un format rapide et accessible à tous les usages.",
   },
   {
     question: "Mes appels sont-ils vraiment confidentiels ?",
     answer:
-      "Oui. Les pods reposent sur l'expertise acoustique Bose pour limiter fortement les bruits exterieurs et la diffusion de votre voix.",
+      "Oui. Les pods reposent sur l'expertise acoustique Bose pour limiter fortement les bruits extérieurs et la diffusion de votre voix.",
   },
   {
-    question: "Comment est geree l'hygiene ?",
+    question: "Comment est gérée l'hygiène ?",
     answer:
-      "Chaque pod est nettoye regulierement avec un protocole renforce. Les surfaces de contact sont desinfectees plusieurs fois par jour.",
+      "Chaque pod est nettoyé régulièrement avec un protocole renforcé. Les surfaces de contact sont désinfectées plusieurs fois par jour.",
   },
   {
     question: "Le service est-il accessible ?",
     answer:
-      "Les zones pilotes sont pensees pour etre accessibles. L'equipe terrain accompagne les utilisateurs en cas de besoin.",
+      "Les zones pilotes sont pensées pour être accessibles. L'équipe terrain accompagne les utilisateurs en cas de besoin.",
   },
   {
     question: "Que faire en cas de retard ou d'annulation ?",
     answer:
-      "Vous pouvez annuler ou deplacer votre creneau jusqu'a une limite horaire indiquee lors de la reservation. Au-dela, le creneau peut etre facture.",
+      "Vous pouvez annuler ou déplacer votre créneau jusqu'à une limite horaire indiquée lors de la réservation. Au-delà, le créneau peut être facturé.",
   },
   {
-    question: "Mes effets personnels sont-ils en securite ?",
+    question: "Mes effets personnels sont-ils en sécurité ?",
     answer:
-      "Chaque pod est equipe d'un verrouillage temporaire et d'une surveillance de zone. Nous recommandons toutefois de garder vos objets de valeur avec vous.",
+      "Chaque pod est équipé d'un verrouillage temporaire et d'une surveillance de zone. Nous recommandons toutefois de garder vos objets de valeur avec vous.",
   },
   {
     question: "L'option immersive est-elle obligatoire ?",
     answer:
-      "Non. L'option immersive est facultative. Vous pouvez profiter du pod en mode silence total sans surcout.",
+      "Non. L'option immersive est facultative. Vous pouvez profiter du pod en mode silence total sans surcoût.",
   },
 ];

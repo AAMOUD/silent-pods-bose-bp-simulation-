@@ -10,13 +10,13 @@ export default function NotFound() {
         Cette capsule n&apos;existe pas encore
       </h1>
       <p className="mt-4 max-w-xl text-zinc-300">
-        La page demandee est introuvable. Revenez a l&apos;accueil pour poursuivre la visite du projet Silent Pods.
+        La page demandée est introuvable. Revenez à l&apos;accueil pour poursuivre la visite du projet Silent Pods.
       </p>
       <Link
         href="/"
         className="mt-8 rounded-full bg-ice-400 px-5 py-2.5 text-sm font-semibold text-zinc-950 transition hover:bg-ice-300"
       >
-        Retour a l&apos;accueil
+        Retour à l&apos;accueil
       </Link>
     </section>
   );

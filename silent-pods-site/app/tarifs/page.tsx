@@ -7,7 +7,7 @@ import { b2bPlans, subscriptionPlans, tariffFaqItems } from "@/data/site";
 export const metadata: Metadata = {
   title: "Tarifs",
   description:
-    "Tarifs Silent Pods: 5 EUR / 30 min, 10 EUR / 1 h, pack voyageur frequent a 29 EUR et option immersive +3 EUR.",
+    "Tarifs Silent Pods: 5 EUR / 30 min, 10 EUR / 1 h, pack voyageur fréquent à 29 EUR et option immersive +3 EUR.",
 };
 
 export default function TarifsPage() {
@@ -15,8 +15,8 @@ export default function TarifsPage() {
     <>
       <SectionWrapper
         eyebrow="Tarification"
-        title="Un modele pay-per-use simple et accessible"
-        description="Les prix Silent Pods sont concus pour rester lisibles, credibles et compatibles avec une adoption rapide en environnement public."
+        title="Un modèle pay-per-use simple et accessible"
+        description="Les prix Silent Pods sont conçus pour rester lisibles, crédibles et compatibles avec une adoption rapide en environnement public."
         className="pt-16"
       >
         <PricingCards />
@@ -25,7 +25,7 @@ export default function TarifsPage() {
       <SectionWrapper
         eyebrow="TTC"
         title="Grille tarifaire claire"
-        description="Tous les prix affiches sont TTC. Le recapitulatif avant paiement reprend site, creneau, formule et prix final."
+        description="Tous les prix affichés sont TTC. Le récapitulatif avant paiement reprend site, créneau, formule et prix final."
       >
         <div className="overflow-x-auto rounded-3xl border border-white/10 bg-white/[0.03]">
           <table className="min-w-full text-left text-sm text-zinc-200">
@@ -45,7 +45,7 @@ export default function TarifsPage() {
               <tr className="border-b border-white/10">
                 <td className="px-4 py-3">Solo 1 heure</td>
                 <td className="px-4 py-3">9 EUR</td>
-                <td className="px-4 py-3">Tout Solo 30 min + casque Bose en pret</td>
+                <td className="px-4 py-3">Tout Solo 30 min + casque Bose en prêt</td>
               </tr>
               <tr className="border-b border-white/10">
                 <td className="px-4 py-3">Premium 1 heure</td>
@@ -55,7 +55,7 @@ export default function TarifsPage() {
               <tr>
                 <td className="px-4 py-3">Abonnement mensuel</td>
                 <td className="px-4 py-3">49 EUR / mois</td>
-                <td className="px-4 py-3">8h incluses, QR rapide, priorite creneaux</td>
+                <td className="px-4 py-3">8h incluses, QR rapide, priorité créneaux</td>
               </tr>
             </tbody>
           </table>
@@ -64,8 +64,8 @@ export default function TarifsPage() {
 
       <SectionWrapper
         eyebrow="Abonnement"
-        title="Details abonnement"
-        description="Politique de report, validite des heures et gestion depuis l&apos;espace utilisateur."
+        title="Détails abonnement"
+        description="Politique de report, validité des heures et gestion depuis l&apos;espace utilisateur."
       >
         <div className="grid gap-4 md:grid-cols-2">
           {subscriptionPlans.map((plan) => (
@@ -84,8 +84,8 @@ export default function TarifsPage() {
             <p className="text-lg font-semibold text-white">FAQ abonnements</p>
             <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-zinc-300">
               <li>Report des heures possible sous 30 jours.</li>
-              <li>Resiliation a tout moment, effet fin de periode.</li>
-              <li>Annulation de reservation: gratuite jusqu&apos;a 60 min avant.</li>
+              <li>Résiliation à tout moment, effet fin de période.</li>
+              <li>Annulation de réservation: gratuite jusqu&apos;à 60 min avant.</li>
             </ul>
           </article>
         </div>
@@ -93,7 +93,7 @@ export default function TarifsPage() {
 
       <SectionWrapper
         title="Pour les entreprises et partenaires"
-        description="Des offres dediees sont disponibles pour gares, aeroports, centres commerciaux et campus entreprise."
+        description="Des offres dédiées sont disponibles pour gares, aéroports, centres commerciaux et campus entreprise."
       >
         <div className="rounded-3xl border border-white/10 bg-white/[0.04] p-7">
           <div className="mb-4 overflow-x-auto rounded-2xl border border-white/10">
@@ -117,14 +117,14 @@ export default function TarifsPage() {
             </table>
           </div>
           <p className="max-w-3xl text-sm leading-relaxed text-zinc-300">
-            Le pilote 2026 permet de tester le modele economique, mesurer l&apos;usage et calibrer une extension
-            progressive. L&apos;objectif est de proposer une experience premium tout en conservant un prix final
+            Le pilote 2026 permet de tester le modèle économique, mesurer l&apos;usage et calibrer une extension
+            progressive. L&apos;objectif est de proposer une expérience premium tout en conservant un prix final
             clair pour l&apos;utilisateur.
           </p>
           <div className="mt-5 flex flex-wrap gap-3">
             <CtaButton href="/b2b">Demander un devis partenariat</CtaButton>
             <CtaButton href="/reservation" variant="ghost">
-              Tester le parcours de reservation
+              Tester le parcours de réservation
             </CtaButton>
           </div>
         </div>
@@ -132,8 +132,8 @@ export default function TarifsPage() {
 
       <SectionWrapper
         eyebrow="FAQ Tarifs"
-        title="Questions frequentes sur la facturation"
-        description="Les points cles juridiques et operationnels avant paiement."
+        title="Questions fréquentes sur la facturation"
+        description="Les points clés juridiques et opérationnels avant paiement."
       >
         <div className="space-y-3">
           {tariffFaqItems.map((item) => (

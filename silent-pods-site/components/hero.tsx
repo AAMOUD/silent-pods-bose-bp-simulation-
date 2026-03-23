@@ -20,9 +20,9 @@ export function Hero() {
             Retrouvez le silence en pleine zone de transit.
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-zinc-300 sm:text-lg">
-            Silent Pods est un concept porte par Bose: des pods insonorises installes dans les gares,
-            aeroports et hubs entreprise pour travailler, se reposer, mediter ou passer un appel
-            confidentiel. ANC Bose, experience premium et reservation instantanee depuis l&apos;app.
+            Silent Pods est un concept porté par Bose: des pods insonorisés installés dans les gares,
+            aéroports et hubs entreprise pour travailler, se reposer, méditer ou passer un appel
+            confidentiel. ANC Bose, expérience premium et réservation instantanée depuis l&apos;app.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <CtaButton href="/reservation">Trouver un pod</CtaButton>
@@ -45,7 +45,7 @@ export function Hero() {
             <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent" />
           </div>
           <p className="text-sm leading-relaxed text-zinc-300">
-            Capsule insonorisee avec ANC, eclairage doux, USB-C, Wi-Fi securise et acces QR/NFC.
+            Capsule insonorisée avec ANC, éclairage doux, USB-C, Wi-Fi sécurisé et accès QR/NFC.
           </p>
         </div>
       </div>

@@ -14,8 +14,8 @@ export default function B2BPage() {
     <>
       <SectionWrapper
         eyebrow="B2B"
-        title="Offrez le silence a vos equipes"
-        description="Cas d'usage: reunion confidentielle, appel important, concentration."
+        title="Offrez le silence à vos équipes"
+        description="Cas d'usage: réunion confidentielle, appel important, concentration."
         className="pt-16"
       >
         <div className="grid gap-4 md:grid-cols-2">
@@ -32,7 +32,7 @@ export default function B2BPage() {
       <SectionWrapper
         eyebrow="Tarifs B2B"
         title="Location vs achat"
-        description="Comparatif simplifie pour decider rapidement."
+        description="Comparatif simplifié pour décider rapidement."
       >
         <div className="overflow-x-auto rounded-3xl border border-white/10 bg-white/[0.03]">
           <table className="min-w-full text-left text-sm text-zinc-200">
@@ -59,25 +59,25 @@ export default function B2BPage() {
       <SectionWrapper
         eyebrow="Devis"
         title="Formulaire devis B2B"
-        description="Collecte des informations necessaires (simulation locale)."
+        description="Collecte des informations nécessaires (simulation locale)."
       >
         <form className="grid gap-4 rounded-3xl border border-white/10 bg-white/[0.03] p-6 md:grid-cols-2">
           <input className="rounded-xl border border-white/15 bg-zinc-950 px-3 py-2 text-sm text-white" placeholder="Nom" />
-          <input className="rounded-xl border border-white/15 bg-zinc-950 px-3 py-2 text-sm text-white" placeholder="Prenom" />
+          <input className="rounded-xl border border-white/15 bg-zinc-950 px-3 py-2 text-sm text-white" placeholder="Prénom" />
           <input className="rounded-xl border border-white/15 bg-zinc-950 px-3 py-2 text-sm text-white" placeholder="Email professionnel" />
           <input className="rounded-xl border border-white/15 bg-zinc-950 px-3 py-2 text-sm text-white" placeholder="Entreprise" />
-          <input className="rounded-xl border border-white/15 bg-zinc-950 px-3 py-2 text-sm text-white" placeholder="Taille entreprise (salaries)" />
-          <input className="rounded-xl border border-white/15 bg-zinc-950 px-3 py-2 text-sm text-white" placeholder="Ville / site souhaite" />
-          <input className="rounded-xl border border-white/15 bg-zinc-950 px-3 py-2 text-sm text-white" placeholder="Nombre de pods souhaites" />
-          <input className="rounded-xl border border-white/15 bg-zinc-950 px-3 py-2 text-sm text-white" placeholder="Date de contact souhaitee" />
+          <input className="rounded-xl border border-white/15 bg-zinc-950 px-3 py-2 text-sm text-white" placeholder="Taille entreprise (salariés)" />
+          <input className="rounded-xl border border-white/15 bg-zinc-950 px-3 py-2 text-sm text-white" placeholder="Ville / site souhaité" />
+          <input className="rounded-xl border border-white/15 bg-zinc-950 px-3 py-2 text-sm text-white" placeholder="Nombre de pods souhaités" />
+          <input className="rounded-xl border border-white/15 bg-zinc-950 px-3 py-2 text-sm text-white" placeholder="Date de contact souhaitée" />
           <textarea className="rounded-xl border border-white/15 bg-zinc-950 px-3 py-2 text-sm text-white md:col-span-2" rows={4} placeholder="Message libre" />
           <label className="inline-flex items-start gap-2 text-sm text-zinc-300 md:col-span-2">
             <input type="checkbox" className="mt-1 h-4 w-4 accent-cyan-300" />
-            J&apos;accepte le traitement de mes donnees (RGPD).
+            J&apos;accepte le traitement de mes données (RGPD).
           </label>
           <div className="md:col-span-2">
             <CtaButton href="/contact">Envoyer la demande de devis</CtaButton>
-            <p className="mt-2 text-xs text-zinc-400">Confirmation email automatique et reponse sous 48h (simulation).</p>
+            <p className="mt-2 text-xs text-zinc-400">Confirmation email automatique et réponse sous 48h (simulation).</p>
           </div>
         </form>
       </SectionWrapper>

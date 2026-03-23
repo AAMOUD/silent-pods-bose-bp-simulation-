@@ -16,13 +16,13 @@ const formulaOptions = [
     id: "solo-60",
     label: "Solo 1h",
     price: 9,
-    description: "Inclut pret de casque Bose pour immersion acoustique.",
+    description: "Inclut prêt de casque Bose pour immersion acoustique.",
   },
   {
     id: "premium-60",
     label: "Premium 1h",
     price: 14,
-    description: "Meditation guidee + ambiance sonore + assise massage.",
+    description: "Méditation guidée + ambiance sonore + assise massage.",
   },
   {
     id: "abonnement",
@@ -36,7 +36,7 @@ const durationOptions = [
   { label: "30 min", value: 30 },
   { label: "1h", value: 60 },
   { label: "2h", value: 120 },
-  { label: "Duree libre", value: 45 },
+  { label: "Durée libre", value: 45 },
 ];
 
 const paymentMethods = ["Carte bancaire", "Apple Pay", "Google Pay", "Solde abonnement"];
@@ -113,16 +113,16 @@ export function ReservationForm() {
                 step >= index ? "bg-ice-300/25 text-ice-100" : "bg-white/[0.04] text-zinc-400"
               }`}
             >
-              Etape {index}
+              Étape {index}
             </div>
           ))}
         </div>
 
         {step === 1 ? (
           <div className="space-y-4">
-            <p className="text-sm text-zinc-300">Selection du creneau (verrouillage 5 min)</p>
+            <p className="text-sm text-zinc-300">Sélection du créneau (verrouillage 5 min)</p>
             <p className="rounded-xl border border-amber-300/40 bg-amber-300/10 px-3 py-2 text-sm text-amber-100">
-              Creneau reserve temporairement: {lockMinutes}:{lockSeconds}
+              Créneau réservé temporairement: {lockMinutes}:{lockSeconds}
             </p>
             <label className="space-y-2">
               <span className="text-sm text-zinc-200">Site</span>
@@ -163,7 +163,7 @@ export function ReservationForm() {
                 </select>
               </label>
               <label className="space-y-2">
-                <span className="text-sm text-zinc-200">Duree</span>
+                <span className="text-sm text-zinc-200">Durée</span>
                 <select
                   value={duration}
                   onChange={(event) => setDuration(Number(event.target.value))}
@@ -178,14 +178,14 @@ export function ReservationForm() {
               </label>
             </div>
             <p className="rounded-xl border border-white/10 bg-zinc-950/60 px-3 py-2 text-sm text-zinc-200">
-              Disponibilite: {currentSite.podsAvailableNow > 0 ? "Disponible maintenant" : "Libre dans 10 min"}
+              Disponibilité: {currentSite.podsAvailableNow > 0 ? "Disponible maintenant" : "Libre dans 10 min"}
             </p>
           </div>
         ) : null}
 
         {step === 2 ? (
           <div className="space-y-4">
-            <p className="text-sm text-zinc-300">Selection de la formule</p>
+            <p className="text-sm text-zinc-300">Sélection de la formule</p>
             <div className="grid gap-3">
               {formulaOptions.map((option) => (
                 <label
@@ -217,7 +217,7 @@ export function ReservationForm() {
             <div className="grid gap-2 sm:grid-cols-3">
               {[
                 ["invite", "Mode invite"],
-                ["create", "Creer un compte"],
+                ["create", "Créer un compte"],
                 ["sso", "Connexion Bose"],
               ].map(([id, label]) => (
                 <label key={id} className="rounded-xl border border-white/10 bg-white/[0.03] px-3 py-2 text-sm text-zinc-200">
@@ -239,7 +239,7 @@ export function ReservationForm() {
                   value={fullName}
                   onChange={(event) => setFullName(event.target.value)}
                   className="w-full rounded-xl border border-white/15 bg-zinc-950 px-3 py-2 text-sm text-white"
-                  placeholder="Prenom Nom"
+                  placeholder="Prénom Nom"
                 />
               </label>
               <label className="space-y-2">
@@ -260,7 +260,7 @@ export function ReservationForm() {
           <div className="space-y-4">
             <p className="text-sm text-zinc-300">Paiement</p>
             <label className="space-y-2">
-              <span className="text-sm text-zinc-200">Methode</span>
+              <span className="text-sm text-zinc-200">Méthode</span>
               <select
                 value={paymentMethod}
                 onChange={(event) => setPaymentMethod(event.target.value)}
@@ -280,7 +280,7 @@ export function ReservationForm() {
                 onChange={(event) => setAcceptTerms(event.target.checked)}
                 className="mt-1 h-4 w-4 accent-cyan-300"
               />
-              J&apos;accepte les CGV et confirme un paiement securise HTTPS (simulation).
+              J&apos;accepte les CGV et confirme un paiement sécurisé HTTPS (simulation).
             </label>
           </div>
         ) : null}
@@ -288,19 +288,19 @@ export function ReservationForm() {
         {step === 5 ? (
           <div className="space-y-4">
             <p className="rounded-xl border border-emerald-300/40 bg-emerald-300/10 px-4 py-3 text-sm text-emerald-100">
-              Reservation confirmee. QR code genere et email de confirmation envoye (simulation).
+              Réservation confirmée. QR code généré et email de confirmation envoyé (simulation).
             </p>
             <div className="rounded-2xl border border-white/10 bg-zinc-950/60 p-4 text-center">
               <p className="font-mono text-xs text-zinc-300">QR-{siteId.toUpperCase()}-{day.replaceAll("-", "")}-{time.replace(":", "")}</p>
               <p className="mt-3 text-sm text-zinc-300">Pod: {currentSite.name} - {currentSite.area}</p>
-              <p className="text-sm text-zinc-300">Ajout calendrier: iCal / Google (demo)</p>
+              <p className="text-sm text-zinc-300">Ajout calendrier: iCal / Google (démo)</p>
             </div>
             <button
               type="button"
               onClick={() => setStep(1)}
               className="rounded-full border border-red-300/50 px-4 py-2 text-sm text-red-100 hover:bg-red-300/10"
             >
-              Annuler la reservation
+              Annuler la réservation
             </button>
           </div>
         ) : null}
@@ -339,20 +339,20 @@ export function ReservationForm() {
       </form>
 
       <aside className="rounded-3xl border border-white/10 bg-white/[0.03] p-6 backdrop-blur-sm">
-        <p className="text-xs uppercase tracking-[0.2em] text-zinc-400">Recapitulatif TTC</p>
+        <p className="text-xs uppercase tracking-[0.2em] text-zinc-400">Récapitulatif TTC</p>
         <div className="mt-5 space-y-3 text-sm text-zinc-200">
           <p className="flex justify-between gap-4">
             <span>Site</span>
             <span className="font-medium text-white">{currentSite.name}</span>
           </p>
           <p className="flex justify-between gap-4">
-            <span>Creneau</span>
+            <span>Créneau</span>
             <span className="font-medium text-white">
               {day} {time}
             </span>
           </p>
           <p className="flex justify-between gap-4">
-            <span>Duree</span>
+            <span>Durée</span>
             <span className="font-medium text-white">{duration} min</span>
           </p>
           <p className="flex justify-between gap-4">
@@ -360,7 +360,7 @@ export function ReservationForm() {
             <span className="font-medium text-white">{selectedFormula.label}</span>
           </p>
           <p className="flex justify-between gap-4">
-            <span>Disponibilite</span>
+            <span>Disponibilité</span>
             <span className="font-medium text-white">
               {currentSite.podsAvailableNow} / {currentSite.podsTotal}
             </span>
@@ -372,7 +372,7 @@ export function ReservationForm() {
             <span>Total TTC</span>
             <span>{totalPrice} EUR</span>
           </p>
-          <p className="mt-2 text-xs text-zinc-400">Paiement securise HTTPS (demo frontend sans transaction reelle).</p>
+          <p className="mt-2 text-xs text-zinc-400">Paiement sécurisé HTTPS (démo frontend sans transaction réelle).</p>
         </div>
       </aside>
     </div>

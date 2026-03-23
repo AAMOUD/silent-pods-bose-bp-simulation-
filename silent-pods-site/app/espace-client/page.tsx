@@ -3,7 +3,7 @@ import { SectionWrapper } from "@/components/section-wrapper";
 
 export const metadata: Metadata = {
   title: "Espace utilisateur",
-  description: "Historique, QR codes, factures PDF, abonnement et preferences utilisateur.",
+  description: "Historique, QR codes, factures PDF, abonnement et préférences utilisateur.",
 };
 
 const upcoming = [
@@ -23,7 +23,7 @@ export default function EspaceClientPage() {
       <SectionWrapper
         eyebrow="Mon compte"
         title="Espace utilisateur"
-        description="Historique, reservations a venir, QR codes, moyens de paiement, factures et abonnement."
+        description="Historique, réservations à venir, QR codes, moyens de paiement, factures et abonnement."
         className="pt-16"
       >
         <div className="grid gap-4 md:grid-cols-3">
@@ -33,19 +33,19 @@ export default function EspaceClientPage() {
             <p className="mt-2 text-sm text-zinc-300">Solde restant: 5h20</p>
           </article>
           <article className="rounded-2xl border border-white/10 bg-white/[0.03] p-4">
-            <p className="text-xs uppercase tracking-[0.2em] text-zinc-400">Paiements enregistres</p>
+            <p className="text-xs uppercase tracking-[0.2em] text-zinc-400">Paiements enregistrés</p>
             <p className="mt-2 text-lg font-semibold text-white">Visa **** 1245</p>
             <p className="mt-2 text-sm text-zinc-300">Apple Pay active</p>
           </article>
           <article className="rounded-2xl border border-white/10 bg-white/[0.03] p-4">
-            <p className="text-xs uppercase tracking-[0.2em] text-zinc-400">Preferences</p>
-            <p className="mt-2 text-lg font-semibold text-white">Formule preferee: Solo 1h</p>
+            <p className="text-xs uppercase tracking-[0.2em] text-zinc-400">Préférences</p>
+            <p className="mt-2 text-lg font-semibold text-white">Formule préférée: Solo 1h</p>
             <p className="mt-2 text-sm text-zinc-300">Favoris: Gare du Nord, CDG</p>
           </article>
         </div>
       </SectionWrapper>
 
-      <SectionWrapper title="Reservations a venir" description="QR codes d'acces et details des prochaines sessions.">
+      <SectionWrapper title="Réservations à venir" description="QR codes d'accès et détails des prochaines sessions.">
         <div className="grid gap-3">
           {upcoming.map((item) => (
             <article key={item.qr} className="rounded-2xl border border-white/10 bg-white/[0.03] p-4">
@@ -57,14 +57,14 @@ export default function EspaceClientPage() {
         </div>
       </SectionWrapper>
 
-      <SectionWrapper title="Historique des reservations" description="Dates, sites, durees, montants et acces aux factures PDF.">
+      <SectionWrapper title="Historique des réservations" description="Dates, sites, durées, montants et accès aux factures PDF.">
         <div className="overflow-x-auto rounded-3xl border border-white/10 bg-white/[0.03]">
           <table className="min-w-full text-left text-sm text-zinc-200">
             <thead className="border-b border-white/10 text-zinc-300">
               <tr>
                 <th className="px-4 py-3">Date</th>
                 <th className="px-4 py-3">Site</th>
-                <th className="px-4 py-3">Duree</th>
+                <th className="px-4 py-3">Durée</th>
                 <th className="px-4 py-3">Montant</th>
                 <th className="px-4 py-3">Facture</th>
               </tr>
@@ -76,7 +76,7 @@ export default function EspaceClientPage() {
                   <td className="px-4 py-3">{item.site}</td>
                   <td className="px-4 py-3">{item.duration}</td>
                   <td className="px-4 py-3">{item.amount}</td>
-                  <td className="px-4 py-3">PDF (demo)</td>
+                  <td className="px-4 py-3">PDF (démo)</td>
                 </tr>
               ))}
             </tbody>

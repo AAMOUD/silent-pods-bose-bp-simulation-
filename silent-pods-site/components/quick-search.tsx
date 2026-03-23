@@ -47,7 +47,7 @@ export function QuickSearch() {
       <p className="text-xs uppercase tracking-[0.2em] text-zinc-400">Recherche rapide</p>
       <div className="mt-4 grid gap-3 md:grid-cols-[1.5fr_auto_auto_auto_auto] md:items-end">
         <label className="space-y-2">
-          <span className="text-sm text-zinc-200">Gare / Aeroport / Entreprise</span>
+          <span className="text-sm text-zinc-200">Gare / Aéroport / Entreprise</span>
           <input
             list="quick-search-options"
             value={query}
@@ -73,7 +73,7 @@ export function QuickSearch() {
         </label>
 
         <label className="space-y-2">
-          <span className="text-sm text-zinc-200">Duree</span>
+          <span className="text-sm text-zinc-200">Durée</span>
           <select
             value={duration}
             onChange={(event) => setDuration(event.target.value)}
@@ -102,7 +102,7 @@ export function QuickSearch() {
             type="button"
             onClick={onUseLocation}
             className="inline-flex items-center justify-center rounded-xl border border-white/15 bg-white/[0.03] px-3 py-2 text-zinc-200 hover:border-ice-300/60"
-            aria-label="Utiliser ma geolocalisation"
+            aria-label="Utiliser ma géolocalisation"
           >
             <LocateFixed className="h-4 w-4" />
           </button>

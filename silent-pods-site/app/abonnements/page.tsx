@@ -4,7 +4,7 @@ import { subscriptionPlans } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "Abonnements",
-  description: "Details des abonnements Silent Pods: heures incluses, politique de report et resiliation.",
+  description: "Détails des abonnements Silent Pods: heures incluses, politique de report et résiliation.",
 };
 
 export default function AbonnementsPage() {
@@ -12,7 +12,7 @@ export default function AbonnementsPage() {
     <SectionWrapper
       eyebrow="Abonnements"
       title="Offres mensuelles"
-      description="Detail des 8h incluses, heures supplementaires et conditions d'annulation/resiliation."
+      description="Détail des 8h incluses, heures supplémentaires et conditions d'annulation/résiliation."
       className="pt-16"
     >
       <div className="grid gap-4 md:grid-cols-2">
@@ -30,11 +30,11 @@ export default function AbonnementsPage() {
         ))}
 
         <article className="rounded-3xl border border-white/10 bg-white/[0.03] p-6">
-          <p className="text-lg font-semibold text-white">Politique de resiliation</p>
+          <p className="text-lg font-semibold text-white">Politique de résiliation</p>
           <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-zinc-300">
-            <li>Resiliation possible a tout moment, effective en fin de periode.</li>
-            <li>Heures non utilisees reportables pendant 30 jours.</li>
-            <li>Annulation d&apos;une session: gratuite jusqu&apos;a 60 min avant le creneau.</li>
+            <li>Résiliation possible à tout moment, effective en fin de période.</li>
+            <li>Heures non utilisées reportables pendant 30 jours.</li>
+            <li>Annulation d&apos;une session: gratuite jusqu&apos;à 60 min avant le créneau.</li>
           </ul>
         </article>
       </div>
