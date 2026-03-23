@@ -22,8 +22,9 @@ export default function ContactPage() {
         <aside className="space-y-5 rounded-3xl border border-white/10 bg-white/[0.03] p-6 backdrop-blur-sm">
           <div>
             <p className="text-xs uppercase tracking-[0.2em] text-zinc-400">Coordonnees</p>
-            <p className="mt-3 text-sm text-zinc-200">contact@silentpods-bose.demo</p>
+            <p className="mt-3 text-sm text-zinc-200">silentpods@bose.com (demo)</p>
             <p className="text-sm text-zinc-200">+33 1 84 88 20 26</p>
+            <p className="text-sm text-zinc-200">Urgence pod bloque: +33 1 80 00 00 24</p>
           </div>
 
           <div className="border-t border-white/10 pt-4">
@@ -36,7 +37,7 @@ export default function ContactPage() {
 
           <div className="border-t border-white/10 pt-4">
             <p className="text-sm text-zinc-300">
-              Delai de reponse vise: 24 a 48 heures ouvrables selon la nature de la demande.
+              Delai de reponse vise: 24 heures ouvrees (48h max selon la demande).
             </p>
           </div>
         </aside>

@@ -2,8 +2,10 @@ import { Metadata } from "next";
 import { CtaButton } from "@/components/cta-button";
 import { Hero } from "@/components/hero";
 import { LocationCards } from "@/components/location-cards";
+import { QuickSearch } from "@/components/quick-search";
 import { SectionWrapper } from "@/components/section-wrapper";
-import { benefits, kpis, useCases } from "@/data/site";
+import { SiteExplorer } from "@/components/site-explorer";
+import { b2bValueProps, benefits, kpis, testimonialItems, useCases } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "Accueil",
@@ -15,6 +17,14 @@ export default function Home() {
   return (
     <>
       <Hero />
+
+      <SectionWrapper
+        eyebrow="Trouver un pod"
+        title="Recherche rapide"
+        description="Filtrez par lieu, disponibilite, date/heure et duree. Geolocalisation et autocompletion incluses."
+      >
+        <QuickSearch />
+      </SectionWrapper>
 
       <SectionWrapper
         eyebrow="Indicateurs"
@@ -101,6 +111,14 @@ export default function Home() {
       </SectionWrapper>
 
       <SectionWrapper
+        eyebrow="Carte + liste"
+        title="Explorer les sites"
+        description="Carte interactive avec filtres par type, ville, disponibilite et tri par proximite, disponibilite ou popularite."
+      >
+        <SiteExplorer />
+      </SectionWrapper>
+
+      <SectionWrapper
         eyebrow="Cas d'usage"
         title="Ils en ont besoin"
         description="Un meme service repond a plusieurs besoins critiques du quotidien dans les espaces de transit."
@@ -121,6 +139,41 @@ export default function Home() {
       </SectionWrapper>
 
       <SectionWrapper
+        eyebrow="B2B"
+        title="Offrez le silence a vos equipes"
+        description="Proposition de valeur entreprise: confidentialite, concentration, installation rapide sans travaux."
+      >
+        <div className="grid gap-4 md:grid-cols-2">
+          {b2bValueProps.map((item) => (
+            <article key={item.title} className="rounded-2xl border border-white/10 bg-white/[0.03] p-5">
+              <item.icon className="h-5 w-5 text-ice-200" />
+              <p className="mt-3 text-lg font-medium text-white">{item.title}</p>
+              <p className="mt-2 text-sm text-zinc-300">{item.description}</p>
+            </article>
+          ))}
+        </div>
+        <div className="mt-6">
+          <CtaButton href="/b2b">Demander un devis B2B</CtaButton>
+        </div>
+      </SectionWrapper>
+
+      <SectionWrapper
+        eyebrow="Avis clients"
+        title="Temoignages"
+        description="Exemples de retours utilisateurs utilises pour la demo de lancement."
+      >
+        <div className="grid gap-4 md:grid-cols-3">
+          {testimonialItems.map((item) => (
+            <article key={item.author} className="rounded-2xl border border-white/10 bg-white/[0.03] p-5">
+              <p className="text-sm leading-relaxed text-zinc-200">&quot;{item.quote}&quot;</p>
+              <p className="mt-4 text-sm font-medium text-white">{item.author}</p>
+              <p className="text-xs text-zinc-400">Note: {item.rating}/5</p>
+            </article>
+          ))}
+        </div>
+      </SectionWrapper>
+
+      <SectionWrapper
         title="Proposer le calme comme un service"
         description="Silent Pods est pret pour un pilote business credible avec une execution locale simple, un pricing lisible et une experience premium Bose."
       >
@@ -131,6 +184,9 @@ export default function Home() {
           </p>
           <div className="mt-6 flex flex-wrap justify-center gap-3">
             <CtaButton href="/reservation">Reserver un pod</CtaButton>
+            <CtaButton href="/espace-client" variant="ghost">
+              Voir l&apos;espace utilisateur
+            </CtaButton>
             <CtaButton href="/contact" variant="ghost">
               Contacter l&apos;equipe projet
             </CtaButton>

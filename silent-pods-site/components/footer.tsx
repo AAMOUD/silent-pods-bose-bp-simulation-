@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { legalLinks } from "@/data/site";
 
 export function Footer() {
   return (
@@ -34,13 +35,32 @@ export function Footer() {
                 Contact
               </Link>
             </li>
+            <li>
+              <Link href="/b2b" className="hover:text-white">
+                Offre B2B
+              </Link>
+            </li>
+            <li>
+              <Link href="/espace-client" className="hover:text-white">
+                Espace client
+              </Link>
+            </li>
           </ul>
         </div>
 
         <div>
-          <p className="text-sm font-medium text-white">Contact fictif</p>
-          <p className="mt-3 text-sm text-zinc-400">contact@silentpods-bose.demo</p>
+          <p className="text-sm font-medium text-white">Contact et support</p>
+          <p className="mt-3 text-sm text-zinc-400">silentpods@bose.com (demo)</p>
           <p className="text-sm text-zinc-400">+33 1 84 88 20 26</p>
+          <p className="mt-2 text-xs text-zinc-500">Reponse sous 24h ouvrees.</p>
+          <p className="text-xs text-zinc-500">Urgence pod bloque: +33 1 80 00 00 24.</p>
+          <div className="mt-4 flex flex-wrap gap-2 text-xs text-zinc-400">
+            {legalLinks.map((link) => (
+              <Link key={link.href} href={link.href} className="rounded-full border border-white/15 px-2 py-1 hover:text-white">
+                {link.label}
+              </Link>
+            ))}
+          </div>
           <p className="mt-4 text-xs text-zinc-500">Mentions legales fictives - Demo academique 2026.</p>
         </div>
       </div>

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Sparkles } from "lucide-react";
 import { CtaButton } from "@/components/cta-button";
 
@@ -16,26 +17,35 @@ export function Hero() {
             Innovation Bose
           </p>
           <h1 className="text-balance text-4xl font-semibold tracking-tight text-white sm:text-5xl md:text-6xl">
-            Le calme la ou vous ne l&apos;attendez pas.
+            Retrouvez le silence en pleine zone de transit.
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-zinc-300 sm:text-lg">
             Silent Pods est un concept porte par Bose: des pods insonorises installes dans les gares,
-            aeroports et centres commerciaux pour travailler, se reposer, mediter ou passer un appel
-            confidentiel.
+            aeroports et hubs entreprise pour travailler, se reposer, mediter ou passer un appel
+            confidentiel. ANC Bose, experience premium et reservation instantanee depuis l&apos;app.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <CtaButton href="/tarifs">Voir les tarifs</CtaButton>
-            <CtaButton href="/reservation" variant="ghost">
-              Reserver un pod
+            <CtaButton href="/reservation">Trouver un pod</CtaButton>
+            <CtaButton href="/tarifs" variant="ghost">
+              Voir les tarifs
             </CtaButton>
           </div>
         </div>
 
         <div className="grid w-full max-w-sm gap-3 rounded-3xl border border-white/10 bg-white/[0.03] p-5 backdrop-blur md:mb-2 animate-fade-in-up-delay">
-          <p className="text-xs uppercase tracking-[0.2em] text-zinc-400">Pilote 2026</p>
-          <p className="text-2xl font-semibold text-white">Experience sonore premium</p>
+          <p className="text-xs uppercase tracking-[0.2em] text-zinc-400">Visuel pod (rendu concept)</p>
+          <div className="relative h-52 overflow-hidden rounded-2xl border border-white/15">
+            <Image
+              src="/images/pod-concept.png"
+              alt="Pod Silent Pods"
+              fill
+              className="object-cover"
+              priority
+            />
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent" />
+          </div>
           <p className="text-sm leading-relaxed text-zinc-300">
-            Technologie de reduction de bruit Bose, confort acoustique et reservation immediate.
+            Capsule insonorisee avec ANC, eclairage doux, USB-C, Wi-Fi securise et acces QR/NFC.
           </p>
         </div>
       </div>

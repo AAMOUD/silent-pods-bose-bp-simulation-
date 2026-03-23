@@ -14,6 +14,7 @@ Objectif du projet:
 - Stack technique
 - Pages disponibles
 - Fonctionnalites
+- Checklist produit
 - Installation et lancement
 - Scripts npm
 - Structure du projet
@@ -61,6 +62,12 @@ Tout le contenu est statique/local et concu pour une presentation academique.
 - Bouton retour en haut
 - Metadata SEO de base (globale + par page)
 - Theme visuel unifie pour un scrolling fluide
+
+## Checklist produit
+
+Checklist complete (fonctionnel, UX, legal, tech, B2B, roadmap):
+
+- Voir [CHECKLIST_SITE.md](CHECKLIST_SITE.md)
 
 ## Installation et lancement
 
